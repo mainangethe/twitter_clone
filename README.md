@@ -1,6 +1,6 @@
 # Twitter Clone
 
-This is the sample application for [*Ruby on Rials Tutorial: Learn Web 
+This is the sample application for [*Ruby on Rails Tutorial: Learn Web 
 Development with Rails*](https://www.railstutorial.org/)
 by [Michael Hartl](http//www.michaelhartl.com).
 
@@ -30,9 +30,9 @@ Finally, run the test suite to verify that everything is working correctly:
 $ rails test
 ```
 
-If the test suite passes, you'll be ready to run the app in a local erver:
+If the test suite passes, you'll be ready to run the app in a local server:
 ```sh
-$ rails s
+$ rails server
 ```
 
 For more information, see the
