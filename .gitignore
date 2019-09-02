@@ -24,3 +24,5 @@
 
 # To avoid conflicts between Spring & Git when using Guard
 /spring/*.pid
+
+/original-images/*
