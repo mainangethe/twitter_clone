@@ -1,0 +1,16 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+
+    <%= image_tag('t-header-logo.png', alt: 'Twirra App logo', id: 'app-logo') %>
+    <%= link_to 'Twirra', root_path, id: 'app-logo-text' %>
+
+    <nav>
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Help', help_path %></li>
+        <li><%= link_to 'Log in', '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
