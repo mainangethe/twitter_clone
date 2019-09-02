@@ -1,0 +1,144 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Table of Content
+//   1. Variables
+//   2. Universal
+//   3. Typography
+//   4. Header
+//   5. Footer
+
+
+
+
+
+// 1. Variables
+$main-bg: #2B325C;
+$main-orange: #E8885F;
+$gray-md-light: #eaeaea;
+
+
+
+
+
+
+// 2. Universal
+body  { padding-top: 60px; }
+
+
+section  { overflow: auto; }
+
+
+textarea  { resize: vertical; }
+
+a  { color: $main-orange; }
+
+
+// img { display: none; }
+
+
+.center  { 
+  text-align: center; 
+
+  h1  { margin-bottom: 10px; }
+}
+  
+
+.navbar-inverse  { background-color: $main-bg; }
+
+
+
+
+// 3. Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  { line-height: 1; }
+
+
+h1  {
+  margin-bottom: 30px;
+  
+  font-size: 3em;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+
+h2  {
+  margin-bottom: 30px;
+  
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+
+p  {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+
+
+
+// 4. Header
+#app-logo,
+#app-logo-text  {
+  float: left;
+  margin-right: 10px;
+  padding-top: 9px;
+}
+
+
+#app-logo-text  {
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+  &:hover  {
+    color: $main-orange;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+// 5. Footer
+footer  {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-md-light;
+  color: $gray-light;
+
+
+  a  { 
+    color: $gray; 
+
+
+    &:hover  { color: $gray-darker; }
+  }
+
+  small  { float: left; }
+
+
+  ul  {
+    float: right;
+    list-style: none;
+
+
+    li  { 
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
