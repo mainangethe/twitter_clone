@@ -7,15 +7,23 @@
 //   3. Typography
 //   4. Header
 //   5. Footer
+//   6. Miscellaneous
 
 
 
 
 
-// 1. Variables
-$main-bg: #2B325C;
-$main-orange: #E8885F;
+// 1. Variables & Mixins
+$main-bg: #2b325c;
+$main-orange: #e8885f;
 $gray-md-light: #eaeaea;
+
+
+@mixin box_sizing  {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
 
 
 
@@ -141,4 +149,17 @@ footer  {
       margin-left: 15px;
     }
   }
+}
+
+
+
+
+
+// 6. Miscellaneous
+.debug_dump  {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
