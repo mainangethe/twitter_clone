@@ -1,3 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-# We will add this later
+ngethe:
+    name: Ng'ethe Maina
+    email: ngethe@mradi.co.ke
+    password_digest: <%= User.digest('123456') %>
