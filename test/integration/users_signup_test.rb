@@ -20,7 +20,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.field_with_errors'
   end
 
-  test 'valid signup ' do 
+  test 'valid signup ' do
     get signup_path
 
     assert_difference 'User.count' do
@@ -37,5 +37,4 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       assert_not flash.empty?
     end
   end
-
 end
