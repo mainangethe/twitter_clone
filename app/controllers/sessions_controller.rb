@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
   def create
     if @user && check_password
       login @user
+      params[:session][:remember_me] == '1' ? remember(@user) : forget(@user)
       redirect_to @user
       flash[:success] = "Welcome back #{@user.name}"
     else
@@ -15,7 +16,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    logout
+    logout if logged_in?
     redirect_to root_url
   end
 

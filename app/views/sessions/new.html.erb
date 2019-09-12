@@ -18,6 +18,11 @@
           placeholder: 'Your Password' %>
         <%= form.label :password, 'Your Password' %>
       </div>
+      
+      <%= form.label :remember_me, class: "checkbox in-line" do %>
+        <%= form.check_box :remember_me %>
+        <span>Remember me on this computer</span>
+      <% end %>
 
       <%= form.submit 'Enter App', class: 'btn btn-primary' %>
 
