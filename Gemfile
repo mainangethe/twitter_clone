@@ -8,7 +8,7 @@ end
 
 gem 'awesome_print',                '1.8.0'
 gem 'bcrypt',                       '3.1.12'
-gem 'bootstrap-sass',               '3.3.7'
+gem 'bootstrap-sass',               '3.4.1'
 gem 'coffee-rails',                 '4.2.2'
 gem 'jbuilder',                     '2.7.0'
 gem 'jquery-rails',                 '4.3.1'
